@@ -19,7 +19,7 @@ embeddings = HuggingFaceInstructEmbeddings(
     model_name=model_name, 
     model_kwargs=model_kwargs,
     encode_kwargs=encode_kwargs,
-)
+)   
 
 memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True)
 text_splitter = CharacterTextSplitter(chunk_size=200, chunk_overlap=100)
